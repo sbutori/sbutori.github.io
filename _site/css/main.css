@@ -90,7 +90,7 @@ h2 ~ p {
 }
 .footer h3 {
   color: #fff;
-  padding-top: 1.5em;
+  padding: 1.5em 0;
   text-transform: uppercase;
 }
 .footer h3 span {
