@@ -3,7 +3,7 @@
   <head>
   <title>Test Page: Don't Panic</title>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" type="text/css" href="/css/reset.css">
   <link rel="stylesheet" type="text/css" href="/css/main.css">
 </head>
@@ -16,8 +16,19 @@
     <ul class="header-nav nav-links">
       <li><a href="/">Home</a></li>
 <li><a href="/gallery">Gallery</a></li>
-<li><a href="/blog">Blog</a></li>
+<li class="dropdown">
+  <a class="drop-trigger" href="/blog">Blog</a>
+  <ul class="drop-menu">
+    <li>Recent Posts</li>
+    
+      <li><a href="/2019/01/23/title-of-second-post.html">This is the title of the post</a></li>
+    
+      <li><a href="/2019/01/22/title-of-post.html">This is the title of the post</a></li>
+    
+  </ul>
+</li>
 <li><a href="/2019/01/23/title-of-second-post.html">Newest Post</a></li>
+
 
     </ul>
   </nav>
@@ -58,8 +69,19 @@
     <ul class="footer-nav nav-links">
       <li><a href="/">Home</a></li>
 <li><a href="/gallery">Gallery</a></li>
-<li><a href="/blog">Blog</a></li>
+<li class="dropdown">
+  <a class="drop-trigger" href="/blog">Blog</a>
+  <ul class="drop-menu">
+    <li>Recent Posts</li>
+    
+      <li><a href="/2019/01/23/title-of-second-post.html">This is the title of the post</a></li>
+    
+      <li><a href="/2019/01/22/title-of-post.html">This is the title of the post</a></li>
+    
+  </ul>
+</li>
 <li><a href="/2019/01/23/title-of-second-post.html">Newest Post</a></li>
+
 
     </ul>
   </nav>
