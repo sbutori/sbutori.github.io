@@ -1,10 +1,25 @@
 <!DOCTYPE html>
 <html>
   <head>
-  <title>Test Page: Don't Panic</title>
+  
+    <title>Test Page: Don't Panic</title>
+  
+  
+    <meta name="description" content="This is a dangerous site.">
+  
+  
+    <meta property="og:title" content="Test Page: Don't Panic">
+  
+  
+    <meta property="og:description" content="This is a dangerous site.">
+  
+  <link rel="icon" href="/favicon.png">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" type="text/css" href="/css/reset.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans|Raleway:100">
+  <link rel="stylesheet" type="text/css" href="/fonts/fontawesome-free-5.7.1-web/css/all.css">
   <link rel="stylesheet" type="text/css" href="/css/main.css">
 </head>
 
@@ -13,6 +28,8 @@
     <!-- 1st potential flexbox item, but not flexing because position: fixed -->
     <header class="header">
   <nav>
+    <input type="checkbox" id="mobile-menu" class="mobile-menu-check">
+    <label for="mobile-menu" class="show-mobile-menu">Menu</label>
     <ul class="header-nav nav-links">
       <li><a href="/">Home</a></li>
 <li><a href="/gallery">Gallery</a></li>
@@ -88,13 +105,19 @@
   <h3>Learn Enough <span>to Be Dangerous</span></h3>
   <ul class="social-list">
     <li>
-  <a href="http://example.com/" class="social-link">Fb</a>
+  <a href="https://facebook.com/learnenough" class="social-link">
+    <i class="fab fa-facebook-f"></i>
+  </a>
 </li>
 <li>
-  <a href="http://example.com/" class="social-link">Tw</a>
+  <a href="https://twitter.com/learnenough" class="social-link">
+    <i class="fab fa-twitter"></i>
+  </a>
 </li>
 <li>
-  <a href="http://example.com/" class="social-link">Gh</a>
+  <a href="https://github.com/learnenough" class="social-link">
+    <i class="fab fa-github"></i>
+  </a>
 </li>
 
   </ul>

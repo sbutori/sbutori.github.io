@@ -1,6 +1,7 @@
 ---
 layout: post
 title: This is the title of the post
+description: First blog post.
 postHero: /images/shark.jpg
 author: Me, Myself and I
 authorTwitter: http://twitter.com/mhartl
