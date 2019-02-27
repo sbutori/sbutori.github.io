@@ -10,10 +10,15 @@ function activateGallery() {
   let mainImage  = document.querySelector("#gallery-photo > img");
 
   thumbnails.forEach(function(thumbnail) {
+    // Preload large images
+    let newImageSrc = thumbnail.dataset.largeVersion;
+    let largeVersion = new Image();
+    largeVersion.src = newImageSrc;
     thumbnail.addEventListener("click", function() {
       // Set clicked image as display image.
-      let newImageSrc = thumbnail.dataset.largeVersion;
+      mainImage.setAttribute("src", newImageSrc);
       let newImageAlt = thumbnail.alt;
+      mainImage.setAttribute("alt", newImageAlt);
       // Exercise 11.3
       // let currentClass = "current"
 
@@ -22,8 +27,6 @@ function activateGallery() {
       thumbnail.parentNode.classList.add("current");
 
       // Update image info
-      mainImage.setAttribute("src", newImageSrc);
-      mainImage.setAttribute("alt", newImageAlt);
       let galleryInfo = document.querySelector("#gallery-info")
       let title         = galleryInfo.querySelector(".title");
       let newTitle      = thumbnail.dataset.title;
