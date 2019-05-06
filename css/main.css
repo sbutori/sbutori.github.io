@@ -74,8 +74,8 @@ h1,h2,h3,h4,h5,h6 {
   text-transform: uppercase;
 }
 .callout-copy {
-  flex: 0 0 45em;
-  font-size: 0.8rem;
+  flex: 1 1 45em;
+  font-size: 1rem;
   padding: 0 3vw;
 }
 .home-section h2 {
@@ -112,14 +112,23 @@ h1,h2,h3,h4,h5,h6 {
   position: relative;
   text-align: center;
   width: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
 }
 .header-logo:hover,
 .header-logo:active {
   background-color: #ed6e2f;
 }
-.header-logo img {
+/* .header-logo img {
   width: 4.3vh;
+} */
+.header-logo i {
+  color: #fff;
 }
+
+
 .header-nav {
   float: right;
   padding: 5.5vh 60px 0 0;
@@ -372,14 +381,14 @@ h1,h2,h3,h4,h5,h6 {
   width: 0;
 }
 .hero-home {
-  background-image: url(/images/shark.jpg);
+  background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('/images/code.jpg');
 }
 .hero-content {
   color: #fff;
   position: relative;
   text-align: center;
   text-transform: uppercase;
-  top: 50%;
+  top: 15%;
   transform: translate(0, -50%);
 }
 .hero-content h1 {
@@ -387,10 +396,10 @@ h1,h2,h3,h4,h5,h6 {
   font-size: 7vw;
   margin-bottom: 0.25em;
 }
-.hero-content .social-link {
+/* .hero-content .social-link {
   background-color: rgba(255, 255, 255, 0.8);
   color: #557c83;
-}
+} */
 .hero-content .social-link:hover {
   background-color: #000;
   color: #fff;
